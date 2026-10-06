@@ -13,8 +13,8 @@ spec:
         app: kubedemoapp
     spec:
       containers:
-      - name: kubedemoapp
-      image: vyshitha/sample:kubeimage2
-      imagePullPolicy: Always
-      ports:
-        - containerPort: 5001
+        - name: kubedemoapp
+          image: vyshitha/sample:kubeimage2
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5001
