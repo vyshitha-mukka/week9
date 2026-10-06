@@ -5,7 +5,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 echo "Build Docker Image"
-                bat "docker build --no-cache -t kubdemoapp:v1 ." #building freshly
+                bat "docker build --no-cache -t kubdemoapp:v1 ." 
             }
         }
         stage('Docker Login') {
